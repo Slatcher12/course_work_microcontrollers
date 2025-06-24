@@ -1,0 +1,82 @@
+.auth-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f6f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ring {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  /* прибрав анімацію та складні бордери для простоти */
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.ring i {
+  display: none; /* сховав ці елементи, бо анімації не потрібні */
+}
+
+.login {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.login h2 {
+  font-size: 1.8rem;
+  color: #222;
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.inputBx {
+  width: 100%;
+}
+
+.inputBx input {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1.5px solid #ccc;
+  outline: none;
+  color: #333;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.inputBx input:focus {
+  border-color: #1976d2;
+  box-shadow: 0 0 5px rgba(25, 118, 210, 0.5);
+}
+
+.inputBx input::placeholder {
+  color: #999;
+}
+
+.inputBx input[type="submit"] {
+  background: #1976d2;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 6px;
+}
+
+.inputBx input[type="submit"]:hover {
+  background: #115293;
+}
